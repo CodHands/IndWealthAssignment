@@ -1,109 +1,54 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald|Slabo+27px|EB+Garamond');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 body {
-  background: #424250;
-  height: 100vh;
-
+  height: auto;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.App {
-  text-align: center;
-  /* position: relative; */
-  font-family: 'Oswald', sans-serif;
-  color: #fff;
-}
-
-.pairs {
-  max-width: 80%;
-  width: 80%;
-  height: 100vh;
-  position: relative;
-  top: 30px;
-  left: 50%;
-  transform: translateX(-50%)
+.app {
+  padding: 50px;
 }
 
 .card {
-  border-radius: 0;
-  border: 2px solid #f75580;
-  background: transparent;
-  color: #fff;
-  font-family: 'Oswald', sans-serif;
+  padding: 25px 15px;
+  border-radius: 10px;
+  -moz-box-shadow: 3px 3px 5px 3px #f8f5f5;
+  box-shadow: 3px 3px 5px 3px #f8f5f5;  
+}
+
+.card .funds-props {
+  display: flex;
+}
+
+.card .prop {
+  flex-grow: 1;
+  flex-basis: 0;
+  list-style: none;
   text-align: left;
-  padding: 15px;
 }
 
-.card p {
-  margin-bottom: 0;
-  font-family: 'Slabo 27px', serif;
+.card .prop p {
+  color: #888;
+  margin-bottom: 0.4rem;
 }
 
-.trade-history-container {
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  width: 80%;
-  height: 100vh;
+.card .prop h5 {
+  letter-spacing: 1px;
+  font-weight: bold;
 }
 
-.card-box {
-  padding: 0 10px;
+.card .prop .return{
+  color: #43803d;
 }
 
-.box-1 {
-  border-left: 5px solid #43b980;
-}
-
-.box-2 {
-  border-left: 5px solid #f96850;
-}
-
-.box-3 {
-  border-left: 5px solid #ffad3e;
-}
-
-.line-chart {
-  border: 2px solid #f75580;
-  padding: 15px 30px;
-}
-
-.tickers .card {
-  padding: 10px;
-  cursor: pointer;
-}
-
-h6 {
-  font-family: 'EB Garamond', serif;
-}
-
-.spinner-loader {
+.loader-image {
+  width: 150px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  width: 80%;
 }
 
-.set-view {
-  position: absolute;
-  padding: 0 5px;
-  right: 50px;
-  cursor: pointer;
-}
-
-.set-view p {
-  margin-bottom: 0;
-}
-
-.set-view:hover {
-  text-decoration: underline;
-}
-
-.table-dark {
-  margin-top: 2.25rem ;
-}
-
-.table-dark thead th {
-  color: cadetblue;
+.checked {
+  color: orange;
 }

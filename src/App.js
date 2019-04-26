@@ -1,18 +1,13 @@
-import React, { Component } from 'react';
-import Pairs from '../src/components/pairs'
-import Trades from '../src/components/trades'
-import { BrowserRouter, Route } from 'react-router-dom';
+import React, {Component} from 'react';
+import Funds from '../src/components/funds';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
-        <div className="App">
-          <Route exact path="/" render={(props) => <Pairs {...props}/>}/>
-          <Route path="/trades/:id" component={Trades}/>
+        <div className="app">
+          <Funds/>
         </div>
-      </BrowserRouter>
     );
   }
 }
